@@ -12,7 +12,7 @@ public class Exercicio04 {
 		Scanner ler = new Scanner(System.in);
 		
 		String nomeVendedor;
-		float salFixo, totalVendas, salTotal, COMISSAO;
+		float salFixo, totalVendas, salTotal, comissao;
 		
 		System.out.println("Digite o nome do vendedor");
 		nomeVendedor = ler.next();
@@ -23,9 +23,9 @@ public class Exercicio04 {
 		System.out.println("Digite o total de lucro das vendas");
 		totalVendas = ler.nextFloat();
 		
-		COMISSAO = (15 * totalVendas)/100;
+		comissao = (15 * totalVendas)/100;
 		
-		salTotal = COMISSAO + salFixo;
+		salTotal = comissao + salFixo;
 		
 		System.out.println("Vendedor:" + "\t" + nomeVendedor + "\n"  + "Salário mensal:" + 
 		"\t" + salFixo + "\n" + "Salário com a comissão:" + "\t" + salTotal);

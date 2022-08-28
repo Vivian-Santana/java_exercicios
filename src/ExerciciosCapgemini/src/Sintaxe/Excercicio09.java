@@ -7,15 +7,17 @@ MÊS.CONSIDERE FIXO O JURO DA POUPANÇA EM 0,07% A. M;*/
 public class Excercicio09 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner ler = new Scanner(System.in);
-		
-		float valorDepositado, rendimento, JUROS = 0.07f;
-		
+
+		float valorDepositado, rendimento, JUROS;
+
 		System.out.println("Digite o valor depositado:");
 		valorDepositado = ler.nextFloat();
-		
-		rendimento = (float) ((0.07 * valorDepositado)/100);
+
+		JUROS = (float) ((0.07 * valorDepositado) / 100);
+		rendimento = valorDepositado + JUROS;
+
 		System.out.println("Seu rendimento foi de:" + rendimento);
 
 	}
