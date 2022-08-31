@@ -15,7 +15,7 @@ public class Exercicio18 {
 		float idade;
 		int i = 1, contador = 0;
 
-		for (; i <= 70; i++) {
+		for (; i <= 75; i++) {
 
 			System.out.println("Digite seu nome:");
 			nome = ler.next();
