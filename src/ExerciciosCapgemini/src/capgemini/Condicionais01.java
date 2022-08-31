@@ -9,7 +9,7 @@ public class Condicionais01 {
         Scanner ler = new Scanner (System.in);
 
         float velocidade = 0, vMedia = 70, vGrave = 90,vGravissima = 110;
-        double vLeve = 50 * 1.1; //acrécimo de 10% de tolerância do radar
+        double vLeve = 50 * 1.1; //ACRÉCIMO DE 10% DE TOLERÂNCIA DO RADAR
 
         System.out.println("Informe a velocidade do veículo:");
         velocidade = ler.nextFloat();

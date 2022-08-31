@@ -6,7 +6,7 @@ import java.util.Scanner;
 DÓLAR (US$). O ALGORITMO DEVERÁ SOLICITAR O VALOR DA COTAÇÃO DO DÓLAR E TAMBÉM A QUANTIDADE DE DÓLARES
 DISPONÍVEIS COM OUSUÁRIO;
 */
-public class Excercicio08 {
+public class Exercicio08 {
 
 	public static void main(String[] args) {
 		
