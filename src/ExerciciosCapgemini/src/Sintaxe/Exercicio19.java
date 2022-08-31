@@ -4,7 +4,7 @@ package Sintaxe;
 MULHER. NO FINAL INFORME TOTAL DE HOMENS E DE MULHERES;*/
 import java.util.Scanner;
 
-public class Exer19 {
+public class Exercicio19 {
 
 	public static void main(String[] args) {
 
