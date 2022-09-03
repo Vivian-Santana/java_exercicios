@@ -1,4 +1,4 @@
-package Sintaxe;
+package Lista01;
 
 import java.util.Scanner;
 

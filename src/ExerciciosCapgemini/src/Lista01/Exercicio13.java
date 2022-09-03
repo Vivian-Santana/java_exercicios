@@ -1,4 +1,4 @@
-package Sintaxe;
+package Lista01;
 
 //13. FAÇA UM ALGORITMO QUE RECEBA UM NÚMERO E MOSTRE UMA MENSAGEM CASO ESTE NÚMERO SEJA MAIOR QUE 10;
 import java.util.Scanner;

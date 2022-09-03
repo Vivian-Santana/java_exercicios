@@ -1,4 +1,4 @@
-package Sintaxe;
+package Lista01;
 
 import java.util.Scanner;
 
@@ -14,45 +14,53 @@ public class Exercicio21 {
 		char b, m, r;
 		int i = 1, idade, totalSaudeBoa = 0, totalSaudeMedia = 0, totalSaudeRuim = 0, totalHomens = 0,
 				totalMulheres = 0, totalPessoas = 0;
+		char desejaRepetir = 's';
 
-		for (; i <= 600; i++) {
+		while (desejaRepetir == 's') {
 
 			System.out.println("Digite seu nome:");
 			nome = ler.next();
 			totalPessoas++;
-			
-			//ENTRADA E CONTAGEM DE GÊNERO
+
+			// ENTRADA E CONTAGEM DE GÊNERO
 			System.out.println("Digite o seu sexo Fem- Feminino/ Masc - Masculino:");
 			sexo = ler.next();
 
-			if (sexo.equals("f") || sexo.equals("F")) {
+			if (sexo.equals("fem") || sexo.equals("Fem") || sexo.equals("FEM")) {
 				totalMulheres++;
 
 			} else {
-				if (sexo.equals("m") || sexo.equals("M")) {
+				if (sexo.equals("masc") || sexo.equals("Masc") || sexo.equals("MASC")) {
 					totalHomens++;
 				}
 
 			}
-			//ENTRADA E CONTAGEM DE ESTADOS DE SAÚDE 
+			// ENTRADA E CONTAGEM DE ESTADO DE SAÚDE
 			System.out.println("Qual é a sua saude? (b- bom/ m- médio/ r- ruim)");
 			saude = ler.next();
 
 			if (saude.equals("b") || saude.equals("B")) {
+				System.out.println(nome + "\t" + "Está apto para o serviço militar obrigatório");
 				totalSaudeBoa++;
 
 			} else {
 				if (saude.equals("m") || saude.equals("M")) {
+					System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
 					totalSaudeMedia++;
 				} else {
 					if (saude.equals("r") || saude.equals("R")) {
+						System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
 						totalSaudeRuim++;
 					}
 				}
 			}
-
+			// PARADA
+			System.out.println("...........................................................");
+			System.out.println("Deseja fazer mais cadastros? S - Sim / N - Não");
+			desejaRepetir = ler.next().charAt(0);
 		}
-		System.out.println("..........................................");
+		// TOTAIS
+		System.out.println("...............................................................");
 		System.out.println("Total com boa saúde:" + totalSaudeBoa++);
 		System.out.println("Total com saúde média:" + totalSaudeMedia++);
 		System.out.println("Total com saúde ruim:" + totalSaudeRuim++);
