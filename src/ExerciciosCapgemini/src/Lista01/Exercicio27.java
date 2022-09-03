@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Exercicio27 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		Scanner ler = new Scanner(System.in);
 
 		float valorVeiculo = 0, descontoA, descontoG, descontoD, valorFinalA, valorFinalG, valorFinalD;
@@ -21,31 +21,30 @@ public class Exercicio27 {
 		System.out.println("Digite o valor do veículo");
 		valorVeiculo = ler.nextFloat();
 
-		System.out.println("Digite o tipo de combustível");
-		combustivel = ler.next();
-
 		while (valorVeiculo != 0) {
+
+			System.out.println("Digite o tipo de combustível");
+			combustivel = ler.next();
+
 			// CONDIÇÕES
-			if (combustivel.equals("alcool")) {
+			if (combustivel.equals("alcool")||combustivel.equals("ALCOOL")||combustivel.equals("Alcool")) {
 				descontoA = valorVeiculo * 0.25f;
 				valorFinalA = valorVeiculo - descontoA;
-				System.out.println("Valor do veículo:" + valorFinalA + "\t" + "com desconto de:" + descontoA + "R$");
+				System.out.println("Valor do veículo:" + "R$" + valorFinalA + "\t" + "com desconto de:" + descontoA + "R$");
 			} else {
-				if (combustivel.equals("gasolina")) {
+				if (combustivel.equals("gasolina")||combustivel.equals("GASOLINA")||combustivel.equals("Gasolina")) {
 					descontoG = valorVeiculo * 0.21f;
 					valorFinalG = valorVeiculo - descontoG;
-					System.out
-							.println("Valor do veículo:" + valorFinalG + "\t" + "com desconto de:" + descontoG + "R$");
+					System.out.println("Valor do veículo:" + "R$" + valorFinalG + "\t" + "com desconto de:" + descontoG + "R$");
 				} else {
-					if (combustivel.equals("diesel")) {
+					if (combustivel.equals("diesel")||combustivel.equals("DIESEL")||combustivel.equals("Diesel")) {
 						descontoD = valorVeiculo * 0.14f;
 						valorFinalD = valorVeiculo - descontoD;
-						System.out.println(
-								"Valor do veículo:" + valorFinalD + "\t" + "com desconto de:" + descontoD + "R$");
+						System.out.println("Valor do veículo:" + "R$" + valorFinalD + "\t" + "com desconto de:" + descontoD + "R$");
 					}
 				}
 			}
-			System.out.println("Digite o valor do veículo:");
+			System.out.println("Digite o valor do veículo:"); //PARADA
 			valorVeiculo = ler.nextFloat();
 		}
 	}
