@@ -18,29 +18,33 @@ public class Exercicio27 {
 		int veiculo = 0;
 
 		// ENTRADA
-		System.out.println("Digite o valor do veículo");
+		
+		System.out.println("Digite o valor do veículo:");
 		valorVeiculo = ler.nextFloat();
 
 		while (valorVeiculo != 0) {
-
-			System.out.println("Digite o tipo de combustível");
+			
+			System.out.println("Digite o tipo de combustível:");
 			combustivel = ler.next();
-
+			
 			// CONDIÇÕES
-			if (combustivel.equals("alcool")||combustivel.equals("ALCOOL")||combustivel.equals("Alcool")) {
+			if (combustivel.equalsIgnoreCase("alcool")) {
 				descontoA = valorVeiculo * 0.25f;
 				valorFinalA = valorVeiculo - descontoA;
 				System.out.println("Valor do veículo:" + "R$" + valorFinalA + "\t" + "com desconto de:" + descontoA + "R$");
+				System.out.println(".............................................................................");
 			} else {
-				if (combustivel.equals("gasolina")||combustivel.equals("GASOLINA")||combustivel.equals("Gasolina")) {
+				if (combustivel.equalsIgnoreCase("gasolina")) {
 					descontoG = valorVeiculo * 0.21f;
 					valorFinalG = valorVeiculo - descontoG;
 					System.out.println("Valor do veículo:" + "R$" + valorFinalG + "\t" + "com desconto de:" + descontoG + "R$");
+					System.out.println(".............................................................................");
 				} else {
-					if (combustivel.equals("diesel")||combustivel.equals("DIESEL")||combustivel.equals("Diesel")) {
+					if (combustivel.equalsIgnoreCase("diesel")) {
 						descontoD = valorVeiculo * 0.14f;
 						valorFinalD = valorVeiculo - descontoD;
 						System.out.println("Valor do veículo:" + "R$" + valorFinalD + "\t" + "com desconto de:" + descontoD + "R$");
+						System.out.println(".............................................................................");
 					}
 				}
 			}

@@ -26,11 +26,11 @@ public class Exercicio21 {
 			System.out.println("Digite o seu sexo Fem- Feminino/ Masc - Masculino:");
 			sexo = ler.next();
 
-			if (sexo.equals("fem") || sexo.equals("Fem") || sexo.equals("FEM")) {
+			if (sexo.equalsIgnoreCase("fem")) {
 				totalMulheres++;
 
 			} else {
-				if (sexo.equals("masc") || sexo.equals("Masc") || sexo.equals("MASC")) {
+				if (sexo.equals("masc")) {
 					totalHomens++;
 				}
 
@@ -39,16 +39,16 @@ public class Exercicio21 {
 			System.out.println("Qual é a sua saude? (b- bom/ m- médio/ r- ruim)");
 			saude = ler.next();
 
-			if (saude.equals("b") || saude.equals("B")) {
+			if (saude.equalsIgnoreCase("b")) {
 				System.out.println(nome + "\t" + "Está apto para o serviço militar obrigatório");
 				totalSaudeBoa++;
 
 			} else {
-				if (saude.equals("m") || saude.equals("M")) {
+				if (saude.equalsIgnoreCase("m")) {
 					System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
 					totalSaudeMedia++;
 				} else {
-					if (saude.equals("r") || saude.equals("R")) {
+					if (saude.equalsIgnoreCase("r")) {
 						System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
 						totalSaudeRuim++;
 					}

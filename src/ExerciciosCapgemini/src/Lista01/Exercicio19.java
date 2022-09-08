@@ -22,13 +22,15 @@ public class Exercicio19 {
 			System.out.println("Digite o seu sexo F- Feminino/ M - Masculino:");
 			sexo = ler.next();
 
-			if (sexo.equals("f") || sexo.equals("F")) {
+			if (sexo.equalsIgnoreCase("f")) {
 				System.out.println(nome + "\t " + "É do sexo feminino");
+				System.out.println("..........................................");
 				totalMulheres++;
 
 			} else {
-				if (sexo.equals("m") || sexo.equals("M")) {
+				if (sexo.equalsIgnoreCase("m")) {
 					System.out.println(nome + "\t " + "É do sexo masculino");
+					System.out.println("..........................................");
 					totalHomens++;
 				}
 
