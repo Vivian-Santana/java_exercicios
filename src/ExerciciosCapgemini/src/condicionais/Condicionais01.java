@@ -1,4 +1,4 @@
-package capgemini;
+package condicionais;
 
 import java.util.Scanner;
 

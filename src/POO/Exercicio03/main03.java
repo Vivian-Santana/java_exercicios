@@ -1,0 +1,25 @@
+package Exercicio03;
+
+/*3. CRIE UMA CLASSE PARA REPRESENTAR UMA BOMBACOMBUSTIVEL. A CLASSE BOMBACOMBUSTIVEL DEVE CONTER OS
+SEGUINTES ATRIBUTOS: TIPO DE COMBUSTÍVEL, VALOR POR LITRO E QUANTIDADE DE COMBUSTÍVEL. ALÉM DESSES
+ATRIBUTOS A CLASSES DEVE CONTER OS SEGUINTES MÉTODOS.
+A. ABASTECERPORVALOR; //MÉTODO ONDE É INFORMADO O VALOR A SER ABASTECIDO E MOSTRA A QUANTIDADE DE
+LITROS QUE FOI COLOCADA NO VEÍCULO.
+B. ABASTECERPORLITRO; // MÉTODO ONDE É INFORMADO A QUANTIDADE EM LITROS DE COMBUSTÍVEL E MOSTRA O
+VALOR A SER PAGO PELO CLIENTE.
+C. ALTERARVALOR; //ALTERA O VALOR DO LITRO DO COMBUSTÍVEL.
+D. ALTERARCOMBUSTIVEL; //ALTERA O TIPO DO COMBUSTÍVEL.
+E. ALTERARQUANTIDADECOMBUSTIVEL; //ALTERA A QUANTIDADE DE COMBUSTÍVEL RESTANTE NA BOMBA.
+CRIE UMA CLASSE QUE CONTENHA UM MÉTODO MAIN PARA TESTAR SUA CLASSE BOMBACOMBUSTÍVEL
+*/
+public class main03 {
+
+	public static void main(String[] args) {
+		BombaCombustivel bomba1 = new BombaCombustivel("Gasolina", 5, 500);
+		
+		System.out.println("Abastecimento por valor:" + bomba1.abastecerPorValor(150)+ "R$");
+		System.out.println("Quantidade restante:" + bomba1.getQuantidadeCombustivel()+"-litros");
+		System.out.println("Abastecimento por litro:" + bomba1.abastecerPorLitro(30)+ "-R$");
+		System.out.println("Quantidade restante:" + bomba1.getQuantidadeCombustivel()+"litros");
+	}
+}
