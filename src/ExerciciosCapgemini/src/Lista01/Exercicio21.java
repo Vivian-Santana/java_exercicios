@@ -43,17 +43,14 @@ public class Exercicio21 {
 				System.out.println(nome + "\t" + "Está apto para o serviço militar obrigatório");
 				totalSaudeBoa++;
 
-			} else {
-				if (saude.equalsIgnoreCase("m")) {
-					System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
-					totalSaudeMedia++;
-				} else {
-					if (saude.equalsIgnoreCase("r")) {
-						System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
-						totalSaudeRuim++;
-					}
-				}
+			} else if (saude.equalsIgnoreCase("m")) {
+				System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
+				totalSaudeMedia++;
+			} else if (saude.equalsIgnoreCase("r")) {
+				System.out.println(nome + "\t" + "Não está apto para o serviço militar obrigatório");
+				totalSaudeRuim++;
 			}
+
 			// PARADA
 			System.out.println("...........................................................");
 			System.out.println("Deseja fazer mais cadastros? S - Sim / N - Não");

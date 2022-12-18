@@ -21,14 +21,10 @@ public class Exercicio25 {
 
 		if (num1 == num2) {
 			System.out.println("Os números são iguias!");
+		} else if (num1 > num2) {
+			System.out.println("Os números são diferentes!" + "\n " + num1 + "\t" + "é maior");
 		} else {
-			if (num1 > num2) {
-				System.out.println("Os números são diferentes!" + "\n " + num1 + "\t" + "é maior");
-			} else {
-				System.out.println("Os números são diferentes!" + "\n " + num2 + "\t" + "é maior");
-			}
+			System.out.println("Os números são diferentes!" + "\n " + num2 + "\t" + "é maior");
 		}
-
 	}
-
 }

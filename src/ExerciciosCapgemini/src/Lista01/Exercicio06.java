@@ -24,7 +24,6 @@ public class Exercicio06 {
 		
 		b = varAuxiliar;//ATRIBUO VARAUXLIAR Q TEM O VAOR DE 'A' DENTRO DELA, A VARIAVEL 'B'
 		
-		
 		System.out.println("Agora o valor da variável 'A' é: " + a + "\n" + "E o valor da variável 'B' é:" + b);
 	}
 

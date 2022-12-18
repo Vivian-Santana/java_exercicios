@@ -27,13 +27,10 @@ public class Exercicio19 {
 				System.out.println("..........................................");
 				totalMulheres++;
 
-			} else {
-				if (sexo.equalsIgnoreCase("m")) {
-					System.out.println(nome + "\t " + "É do sexo masculino");
-					System.out.println("..........................................");
-					totalHomens++;
-				}
-
+			} else if (sexo.equalsIgnoreCase("m")) {
+				System.out.println(nome + "\t " + "É do sexo masculino");
+				System.out.println("..........................................");
+				totalHomens++;
 			}
 
 		}

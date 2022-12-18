@@ -29,12 +29,10 @@ public class Exercicio16 {
 
 		if (media >= 7) {
 			System.out.println(aluno + "\t" + "Aprovado(A)");
+		} else if (media >= 5.1 || media <= 6.9) {
+			System.out.println(aluno + "\t" + "Recuperação");
 		} else {
-			if (media >= 5.1 || media <= 6.9) {
-				System.out.println(aluno + "\t" + "Recuperação");
-			} else {
-				System.out.println(aluno + "\t" + "Reprovado(a)");
-			}
+			System.out.println(aluno + "\t" + "Reprovado(a)");
 		}
 	}
 

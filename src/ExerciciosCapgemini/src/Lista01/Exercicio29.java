@@ -14,34 +14,47 @@ public class Exercicio29 {
 		System.out.println("Digite o número do mês / Enter the month number / Ingrese el número de mes");
 		mes = ler.next();
 
-		if (mes.equals("1")) {
+		switch (mes) {
+		case "1":
 			System.out.println("Janeiro / January / Enero");
-		} else if (mes.equals("2")) {
+			break;
+		case "2":
 			System.out.println("Fevereiro/ February/ Febrero");
-		} else if (mes.equals("3")) {
+			break;
+		case "3":
 			System.out.println("Março / March / Marzo");
-		} else if (mes.equals("4")) {
+			break;
+		case "4":
 			System.out.println("Abril / April / Abril");
-		} else if (mes.equals("5")) {
+			break;
+		case "5":
 			System.out.println("Maio / May / Mayo");
-		} else if (mes.equals("6")) {
+			break;
+		case "6":
 			System.out.println("Junho / June / Junio");
-		} else if (mes.equals("7")) {
+			break;
+		case "7":
 			System.out.println("Julho / July / Julio");
-		} else if (mes.equals("8")) {
+			break;
+		case "8":
 			System.out.println("Agosto / August / Agosto");
-		} else if (mes.equals("9")) {
+			break;
+		case "9":
 			System.out.println("Setembro / September / Septiembre");
-		} else if (mes.equals("10")) {
+			break;
+		case "10":
 			System.out.println("Outubro / October / Octubre");
-		} else if (mes.equals("11")) {
+			break;
+		case "11":
 			System.out.println("Novembro / November / Noviembre");
-		} else if (mes.equals("12")) {
+			break;
+		case "12":
 			System.out.println("Dezembro / December / Diciembre");
-		} else {
+			break;
+		default:
 			System.out.println("Mês inválido! / Invalid month! / !mes inválido!");
+			break;
 		}
-
 	}
 
 }
