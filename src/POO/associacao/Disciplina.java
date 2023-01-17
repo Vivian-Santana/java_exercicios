@@ -1,0 +1,6 @@
+package associacao;
+//ASSOCIAÇÃO ESTRUTURAL - AGREGAÇÃO "SEM PARTE TODO":
+public class Disciplina {
+
+	Aluno aluno;// ALUNO PODE EXISTIR SEM A DISCIPLINA, E DISCIPLINA TBM PODE EXISTIR SEM ALUNO.
+}				// TEMOS UMA AGREGAÇÃO.
