@@ -1,0 +1,11 @@
+package exerciciosMap;
+/*
+DADA A POPULAÇÃO ESTIMADA DE ALGUNS ESTADOS DO NORDESTE BRASILEIRO, FAÇA:
+ ESTADO = PE - POPULAÇÃO = 9.616.621
+ ESTADO = AL - POPULAÇÃO = 3.351.543
+ ESTADO = CE - POPULAÇÃO  = 9.187.103
+ ESTADO = RN - POPULAÇÃO = 3.534.265
+ */
+public class Exercicio1 {
+
+}

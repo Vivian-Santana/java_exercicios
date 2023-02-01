@@ -4,7 +4,7 @@ package DesafiosDio;
  * A ENTRADA CONSISTE EM UM CARACTERE(CHAR) M , N OU V QUE INFORMARÁ O TURNO EM QUE VOCÊ ESTUDA.*/
 import java.util.Scanner;
 
-public class Turno {
+public class TurnoSwitchCase {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);

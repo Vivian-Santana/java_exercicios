@@ -105,7 +105,7 @@ MODELO = KWID - CONSUMO = 15,6 KM/L
 			
 			System.out.println("");
 			
-			System.out.println("Exiba a media dos consumos desta coleção de carros: " +(soma/carrosPopulares.size()));
+			System.out.println("Exiba a média dos consumos desta coleção de carros: " +(soma/carrosPopulares.size()));
 			
 			System.out.println("");
 			System.out.println(carrosPopulares);
@@ -142,8 +142,6 @@ MODELO = KWID - CONSUMO = 15,6 KM/L
 			carrosPopulares.clear();
 			
 			System.out.println("Confira se a coleção está vazia: " + carrosPopulares.isEmpty());
-			
-			//ORDENAÇÃO COM MAP:
 			
 	}
 }
