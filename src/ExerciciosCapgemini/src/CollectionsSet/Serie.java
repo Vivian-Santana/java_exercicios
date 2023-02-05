@@ -1,5 +1,5 @@
-package ExerSerieCollections;
-
+package CollectionsSet;
+//PERTENCE A CLASSE ORDENAÇÃO DE ELEMENTOS EXERCICIO DAS SÉRIES
 import java.util.Objects;
 
 //import CollectionsSet.Serie;

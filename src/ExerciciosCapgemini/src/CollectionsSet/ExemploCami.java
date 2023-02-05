@@ -1,7 +1,7 @@
 package CollectionsSet;
 import java.util.*;
 
-public class ExemploCami {
+/*public class ExemploCami {
 
 	    public static void main(String[] args) {
 
@@ -41,14 +41,13 @@ public class ExemploCami {
 	                + serie.getGenero() + " - " + serie.getTempoEpisodio());
 
 	//Pra você
-	/*        System.out.println("--\tOrdem gênero\t--");
-	          System.out.println("--\tOrdem Tempo Episódio\t--");
-	 */
+	//       System.out.println("--\tOrdem gênero\t--");
+	 //    System.out.println("--\tOrdem Tempo Episódio\t--");
+	 }
+	 
+	}*/
 
-	    }
-	}
-
-	class Serie implements Comparable<Serie>{
+	/*class Serie implements Comparable<Serie>{
 	    private String nome;
 	    private String genero;
 	    private Integer tempoEpisodio;
@@ -115,4 +114,4 @@ public class ExemploCami {
 	        return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
 	    }
 
-}
+}*/

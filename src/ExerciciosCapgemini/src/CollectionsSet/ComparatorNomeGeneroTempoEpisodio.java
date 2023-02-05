@@ -1,5 +1,5 @@
-package ExerSerieCollections;
-
+package CollectionsSet;
+//PERTENCE A CLASSE ORDENAÇÃO DE ELEMENTOS EXERCICIO DAS SÉRIES
 import java.util.Comparator;
 //COMPARANDO POR NOME, GENERO OU TEMPO DE DURAÇÃO DO EPISODIO.
 public class ComparatorNomeGeneroTempoEpisodio implements Comparator <Serie>{

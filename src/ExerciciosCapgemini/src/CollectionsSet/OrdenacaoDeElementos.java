@@ -1,4 +1,4 @@
-package ExerSerieCollections;
+package CollectionsSet;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
