@@ -1,4 +1,4 @@
-package estruturaDeDados;
+package estruturaDeDados_AULA7;
 
 import java.util.LinkedList;
 
@@ -41,7 +41,8 @@ public class LinkedListCarros {
 		// MOSTRA O ULTIMO ITEM
 		System.out.println("O ultimo item é: "+ cars.getLast());
 
-		cars.clear();
+		cars.clear(); // LIMPANDO A LISTA
+		
 		if (cars.isEmpty()) {
 			System.out.println("A LinkedList está vazia.");
 		}

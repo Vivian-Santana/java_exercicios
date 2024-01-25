@@ -1,4 +1,4 @@
-package estruturaDeDados;
+package estruturaDeDados_AULA7;
 
 //AULA 7.C
 import java.util.ArrayList;
@@ -13,18 +13,19 @@ public class ArrayListCarros {
 		ArrayList<String> carros = new ArrayList<>();
 
 		// add carros no arrayList
+		carros.add("Fluence");
 		carros.add("Kombi");
 		carros.add("Jaguar");
 		carros.add("BMW");
 		carros.add("Mercedes");
 		carros.add("Fusca");
 		carros.add("Vectra");
-		carros.add("Fluence");
-
-		// ALTERA E RESGATA COM BASE NA POSIÇÃO E ALTERA COM BASE NO CONTEÚDO.
-
+		carros.add("Sandero");
+		
 		// MOSTRA ARRAY
 		System.out.println(carros);
+
+		// ALTERA E RESGATA COM BASE NA POSIÇÃO E REMOVE COM BASE NO CONTEÚDO.
 
 		carros.set(4, "Mitsubishi"); // SUBSTITUI O QUE ESTIVER NA POSIÇÃO 4 POR MITSUBISHI
 		System.out.println(carros);
@@ -39,10 +40,9 @@ public class ArrayListCarros {
 		// carros.clear(); //LIMPA O ARRAY
 		// System.out.println(carros);
 
-		/*
-		 * if (carros.isEmpty()) { System.out.println("O vetor está vazio"); }
-		 */
-		System.out.println(carros.size());
+		//if (carros.isEmpty()) { System.out.println("O vetor está vazio"); }
+		 
+		System.out.println("Número de carros:" + carros.size()); //TAMANHO DO ARRAY
 
 		if (carros.contains("BMW M3")) { // SUBSTITUINDO QUANDO NÃAO SE SABE A POSIÇÃO
 			for (int i = 0; i < carros.size(); i++) {// PERCORRE O ARRAY ATÉ ACHAR A BMW
@@ -51,7 +51,7 @@ public class ArrayListCarros {
 					break; // E PARA A EXECUÇÃO DO LAÇO
 				}
 			}
-		} else {
+		}else {
 			System.out.println("Não encontrei o argumento pesquisado.");
 		}
 		System.out.println(carros);
